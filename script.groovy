@@ -20,7 +20,7 @@ def commitVersionUpdate(){
         sh 'git status'
         sh 'git branch'
 
-        sh "git remote set-url origin https://${USER}:${PASS}@https://github.com/CGL-DevOps/DevOps-Complete-the-CI-CD-Pipeline-Docker-Compose-Dynamic-versioning-.git"
+        sh "git remote set-url origin https://${USER}:${PASS}@github.com/CGL-DevOps/DevOps-Complete-the-CI-CD-Pipeline-Docker-Compose-Dynamic-versioning-.git"
         sh 'git add .'
         echo "${USER} ${PASS}"
         sh 'git commit -m "ci:version bump ${BUILD_NUMBER}"'
