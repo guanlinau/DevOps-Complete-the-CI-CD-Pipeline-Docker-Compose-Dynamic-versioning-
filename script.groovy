@@ -8,7 +8,7 @@ def incrementVersion() {
    versions:commit'
    def matcher = readFile('pom.xml') =~ '<version>(.+)</version>'
    def version = matcher[0][1]
-   env.IMAGE_NAME = "$version-$BUILD_NUMBER-java-multi-pipeline-amd64"
+   env.IMAGE_NAME = "jason8746/my-app:$version-java-multi-pipeline-amd64-$BUILD_NUMBER"
    echo "something"
    echo "${IMAGE_NAME}"
 }
