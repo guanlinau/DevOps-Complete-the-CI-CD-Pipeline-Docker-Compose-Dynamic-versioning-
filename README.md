@@ -22,31 +22,31 @@ AWS, Jenkins, Docker, Linux, Git, Java, Maven, Docker Hub
 
 ###### Step 2: Install Docker inside the EC2 Instance
 
-###### Step 4: Create SSH key credentials for EC2 server on Jenkins globally
+###### Step 3: Create SSH key credentials for EC2 server on Jenkins globally
 
 ![image](image/Screenshot%202023-02-26%20at%207.17.09%20pm.png)
 
-###### Step 5: Install SSH Agent plugin on Jenkins UI
+###### Step 4: Install SSH Agent plugin on Jenkins UI
 
 ![image](image/Screenshot%202023-02-26%20at%207.17.01%20pm.png)
 
-###### Step 6: Create Multi-pipeline for Java project and bind it to git repository and configure the credentials for the pipeline
+###### Step 5: Create Multi-pipeline for Java project and bind it to git repository and configure the credentials for the pipeline
 
-###### Step 8: Create Dockerfile, Docker-compose.yaml file and Jenkins file for Java project
+###### Step 6: Create Dockerfile, Docker-compose.yaml file and Jenkins file for Java project
 
 ![image](image/Screenshot%202023-02-26%20at%209.36.29%20pm.png)
 
-###### Step 10: Update the Jenkins file on Deployment stage with Jenkins login EC2 server, copy docker-compose file to EC2 instance and run Java app as a container by docker-compose
+###### Step 7: Update the Jenkins file on Deployment stage with Jenkins login EC2 server, copy docker-compose file to EC2 instance and run Java app as a container by docker-compose
 
 ![image](image/Screenshot%202023-02-26%20at%2010.27.05%20pm.png)
 
-###### Step 11: Update the Jenkins ip and app running port to EC2 Instance security
+###### Step 8: Update the Jenkins ip and app running port to EC2 Instance security
 
 ![image](image/Screenshot%202023-02-26%20at%208.17.49%20pm.png)
 
 ![image](image/Screenshot%202023-02-26%20at%2010.27.15%20pm.png)
 
-###### Step 12: Extract multiple Linux commands into a separate shell script for Improvement
+###### Step 9: Extract multiple Linux commands into a separate shell script for Improvement
 
 1-Create a shell script file
 
@@ -59,9 +59,9 @@ AWS, Jenkins, Docker, Linux, Git, Java, Maven, Docker Hub
 
 ![image](image/Screenshot%202023-02-27%20at%202.48.23%20pm.png)
 
-####### Step 13: Refactor automatically trigger jenkins build for every push event on Git
+###### Step 10: Refactor automatically trigger jenkins build for every push event on Git
 
-####### Step 14: Dynamically increment java app version
+###### Step 11: Dynamically increment java app version
 ![image](image/Screenshot%202023-02-27%20at%205.40.39%20pm.png)
 ![image](image/Screenshot%202023-02-27%20at%205.40.50%20pm.png)
 ![image](image/Screenshot%202023-02-27%20at%204.48.45%20pm.png)
