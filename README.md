@@ -1,4 +1,4 @@
-### CD - Deploy Application from Jenkins Pipeline to EC2 Instance (automatically with docker)
+### CI/CD - Complete the CI/CD Pipeline (Docker-Compose, Dynamic versioning)
 
 ### Technologies used:
 
@@ -6,13 +6,15 @@ AWS, Jenkins, Docker, Linux, Git, Java, Maven, Docker Hub
 
 ### Project Description:
 
-1- Prepare AWS EC2 Instance for deployment (Install Docker)
+1- CI step: Increment version
 
-2- Create ssh key credentials for EC2 server on Jenkins
+2- CI step: Build artifact for Java Maven application
 
-3- Extend the previous CI pipeline with deploy step to ssh into the remote EC2 instance and deploy newly built image from Jenkins server
+3- CI step: Build and push Docker image to Docker Hub automatically by webhook
 
-4- Configure security group on EC2 Instance to allow access to our web application
+4- CD step: Deploy new application version with Docker Compose
+
+5- CD step: Commit the version update
 
 ### Installation instructions:
 
@@ -56,3 +58,13 @@ AWS, Jenkins, Docker, Linux, Git, Java, Maven, Docker Hub
 ![image](image/Screenshot%202023-02-27%20at%202.53.45%20pm.png)
 
 ![image](image/Screenshot%202023-02-27%20at%202.48.23%20pm.png)
+
+####### Step 13: Refactor automatically trigger jenkins build for every push event on Git
+
+####### Step 14: Dynamically increment java app version
+![image](image/Screenshot%202023-02-27%20at%205.40.39%20pm.png)
+![image](image/Screenshot%202023-02-27%20at%205.40.50%20pm.png)
+![image](image/Screenshot%202023-02-27%20at%204.48.45%20pm.png)
+![image](image/Screenshot%202023-02-27%20at%205.41.09%20pm.png)
+![image](image/Screenshot%202023-02-27%20at%205.41.25%20pm.png)
+![image](image/Screenshot%202023-02-27%20at%205.42.14%20pm.png)
