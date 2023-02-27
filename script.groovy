@@ -9,6 +9,7 @@ def incrementVersion() {
    def matcher = readFile('pom.xml') =~ '<version>(.+)</version>'
    def version = matcher[0][1]
    env.IMAGE_NAME = "$version-$BUILD_NUMBER-java-multi-pipeline-amd64"
+   echo "something"
    echo "${IMAGE_NAME}"
 }
 
@@ -19,7 +20,7 @@ def commitVersionUpdate(){
         sh 'git status'
         sh 'git branch'
 
-        sh "git remote set-url origin https://${USER}:${PASS}@github.com/CGL-DevOps/DevOps-Dynamically-Increment-Application-version-in-Jenkins-Pipeline.git"
+        sh "git remote set-url origin https://${USER}:${PASS}@https://github.com/CGL-DevOps/DevOps-Complete-the-CI-CD-Pipeline-Docker-Compose-Dynamic-versioning-.git"
         sh 'git add .'
         echo "${USER} ${PASS}"
         sh 'git commit -m "ci:version bump ${BUILD_NUMBER}"'
