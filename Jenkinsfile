@@ -7,9 +7,6 @@ pipeline {
     tools {
         maven 'Maven'
     }
-    environment {
-        IMAGE_NAME = "jason8746/my-app:1.0.2-java-multi-pipeline-amd64"
-    }
     stages {
        
         stage("init") {
